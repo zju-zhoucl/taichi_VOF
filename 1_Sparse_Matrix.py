@@ -229,7 +229,7 @@ while istep < istep_max:
         count = count + 1
         Fn1 = F.to_numpy()
         check_mass[count] = sum(sum(abs(Fn1[imin:imax + 1, jmin: jmax + 1])))
-        print('迭代次数', str(istep), '\n check mass：', str(check_mass[count]),
+        print('Number of iterations', str(istep), '\n check mass：', str(check_mass[count]),
               '\n')
         plt.figure(figsize=(5, 5))
         xm1 = xm.to_numpy()
